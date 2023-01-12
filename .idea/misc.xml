@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ch_selector.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_cart.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_like.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_unlike.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_all_product.xml" value="0.21944444444444444" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/item_rv.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
