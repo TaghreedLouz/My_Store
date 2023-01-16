@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
-    tools:context=".AllProductActivity">
+    android:background="#659BB3"
+    tools:context=".Splash_Activity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="٤٠٩dp"
-        android:layout_height="٦٠١dp"
+
+    <ImageView
+        android:id="@+id/splashImg"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@drawable/ic_logo" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

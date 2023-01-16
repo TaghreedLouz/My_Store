@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/filterName"
+        android:icon="@drawable/ic_settings_24"
+        app:showAsAction="never"
+        android:title="Filter by name Ascending"
+        />
+    <item android:id="@+id/filterPriceBid"
+        android:icon="@drawable/ic_settings_24"
+        app:showAsAction="never"
+        android:title="Filter by price bid"
+        />
+    <item android:id="@+id/filterPriceCheapest"
+        android:icon="@drawable/ic_settings_24"
+        app:showAsAction="never"
+        android:title="Filter by cheapest price"
+        />
+    <item android:id="@+id/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"
+        android:title="search"
+        />
+
+    <item android:id="@+id/cart"
+        android:icon="@drawable/ic_cart_add"
+        app:showAsAction="always"
+        android:title="cart"
+        />
+
+    <item android:id="@+id/Favourite"
+        android:icon="@drawable/ic_like"
+        app:showAsAction="always"
+        android:title="Favourite"
+        />
+    <item android:id="@+id/sittings"
+        android:icon="@drawable/ic_person_24"
+        app:showAsAction="always"
+        android:title="Profile"
+        />
+
+</menu>

@@ -3,15 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyStore/app/src/main/res/drawable-v24/ic_settings_24.xml" value="0.2595" />
         <entry key="..\:/MyStore/app/src/main/res/drawable/ch_selector.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_add.xml" value="0.1555" />
         <entry key="..\:/MyStore/app/src/main/res/drawable/ic_cart.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_cartAdded.xml" value="0.2595" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_cart_add.xml" value="0.2595" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_image_24.xml" value="0.214" />
         <entry key="..\:/MyStore/app/src/main/res/drawable/ic_like.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/drawable/ic_person_24.xml" value="0.214" />
         <entry key="..\:/MyStore/app/src/main/res/drawable/ic_unlike.xml" value="0.14" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_add.xml" value="0.24010416666666667" />
         <entry key="..\:/MyStore/app/src/main/res/layout/activity_all_product.xml" value="0.21944444444444444" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_favourit.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_firestore.xml" value="0.25416666666666665" />
         <entry key="..\:/MyStore/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/MyStore/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/MyStore/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_show_all.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/MyStore/app/src/main/res/layout/item_rv.xml" value="0.2" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/item_rvCart.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/item_rv_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/layout/item_rv_favourite.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/menu/menu_logout_back.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/menu/menu_scrolling.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyStore/app/src/main/res/menu/menu_settings.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

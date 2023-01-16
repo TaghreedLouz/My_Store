@@ -7,108 +7,376 @@
     android:padding="15dp"
     tools:context=".ProfileActivity">
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="enter name"
-        android:inputType="textPersonName"
-        android:padding="10dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:srcCompat="@drawable/ic_image_24" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:civ_border_color="#D3D3D3"
+        app:civ_border_width="@dimen/_2sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnImge"
-        android:layout_width="match_parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_220sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="choose image"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="FullName"
+        android:padding="@dimen/_2sdp"
+        android:textColorHint="#C5C5C5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etName" />
+        app:layout_constraintTop_toBottomOf="@+id/image">
 
-    <Button
-        android:id="@+id/btnUpdateImageAndName"
-        android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvName"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:background="#EBF9FF"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_220sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="update image and name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Email"
+        android:padding="@dimen/_2sdp"
+        android:textColorHint="#C5C5C5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnImge" />
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout">
 
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:background="#EBF9FF"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Spinner
+        android:id="@+id/sp_country"
+        android:layout_width="@dimen/_220sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="#E7F8FF"
+        android:entries="@array/Country"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutbdate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
         android:ems="10"
-        android:hint="enter email"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
+        android:hint="SelectBirthdate"
+        android:background="#E7F8FF"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUpdateImageAndName" />
+        app:layout_constraintTop_toBottomOf="@+id/sp_country">
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="enter current password"
-        android:inputType="textPassword"
-        android:padding="10dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBirthdate"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/registar_rg_gender"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutbdate">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/registar_rb_male"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="1"
+            android:duplicateParentState="true"
+            android:text="Male"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/registar_rb_Female"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layBtnEditAndSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registar_rg_gender">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveApp"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditApp"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layBtnEditAndSave"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnUpdateEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_35sdp"
         android:text="update email"
+        android:textSize="@dimen/_8ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/etOldPass"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/layUpdateEmail"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="enter old password"
-        android:inputType="numberPassword"
-        android:padding="10dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUpdateEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateEmail">
 
-    <EditText
-        android:id="@+id/etNewPass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="enter new password"
-        android:inputType="numberPassword"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etOldPass" />
+        <EditText
+            android:id="@+id/etEmailEdit"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:ems="10"
+            android:hint="enter email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:ems="10"
+            android:hint="enter current password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/btnCancelEmailUpdate"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Cancel"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSaveEmailUpdate"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Save"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnUpdatePassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_35sdp"
         android:text="update password"
+        android:textSize="@dimen/_8ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNewPass" />
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateEmail"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/layUpdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdatePassword">
+
+        <EditText
+            android:id="@+id/etOldPass"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:ems="10"
+            android:hint="enter old password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etNewPass"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="enter new password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnCancelPasswordUpdate"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Cancel"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnSavePasswordUpdate"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Save"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="48dp"
+        android:text="logout"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layUpdatePassword" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:text="Cancel"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

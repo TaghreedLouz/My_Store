@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">My Store</string>
+    <string-array name="Country">
+        <item>Palestine</item>
+        <item>Egypt</item>
+        <item>Sudan</item>
+        <item>Saudi Arabia</item>
+        <item>Tunisia</item>
+        <item>Somalia</item>
+        <item>Algeria</item>
+        <item>Morocco</item>
+        <item>Iraq</item>
+        <item>Syria</item>
+        <item>Yemen</item>
+        <item>Libya</item>
+        <item>Jordan</item>
+        <item>Lebanon</item>
+        <item>Emirates</item>
+        <item>Kuwait</item>
+        <item>Qatar</item>
+    </string-array>
 </resources>

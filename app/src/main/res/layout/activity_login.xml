@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
-    tools:context=".MainActivity">
+    android:padding="@dimen/_30sdp"
+    tools:context=".LoginActivity">
 
     <EditText
         android:id="@+id/emailEt"
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email"
+        android:layout_marginTop="@dimen/_50sdp"
         android:selectAllOnFocus="true"
         android:inputType="textEmailAddress"
         android:textSize="20sp"
@@ -52,9 +53,10 @@
         android:text="u have an account ? login"
         android:textAlignment="center"
         android:textColor="#95CDE6"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

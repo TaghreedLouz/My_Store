@@ -1,18 +1,39 @@
 package com.devtaghreed.mystore;
 
-import android.net.Uri;
-
 public class Products {
 String name;
-double price;
+int price;
 String details;
-Uri image;
+String image;
+String documentId;
 
-    public Products(String name, double price, String details, Uri image) {
+    public Products() {
+    }
+
+    public Products(String name, int price, String details, String image) {
         this.name = name;
         this.price = price;
         this.details = details;
         this.image = image;
+    }
+
+    public Products(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public Products(String name, int price, String details) {
+        this.name = name;
+        this.price = price;
+        this.details = details;
+    }
+
+    public String getDocumentId() {
+        return documentId;
+    }
+
+    public void setDocumentId(String documentId) {
+        this.documentId = documentId;
     }
 
     public String getName() {
@@ -23,11 +44,11 @@ Uri image;
         this.name = name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -39,11 +60,21 @@ Uri image;
         this.details = details;
     }
 
-    public Uri getImage() {
+    public String  getImage() {
         return image;
     }
 
-    public void setImage(Uri image) {
+    public void setImage(String image) {
         this.image = image;
+    }
+
+    @Override
+    public String toString() {
+        return "Products{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", details='" + details + '\'' +
+                ", image=" + image +
+                '}';
     }
 }
